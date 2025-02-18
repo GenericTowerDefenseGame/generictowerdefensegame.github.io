@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Generic Tower Defense Game</title>
+    </head>
+    <body>
+        <div id="mainmenu">
+            <h1 class="menutext">Main Menu</h1>
+            <button class="menubutton" id="playbtn">Play</button>
+        </div>
+        <div hidden id="mapselect">
+            <h1 class="selecttext">Map Select</h1>
+            <button class="selectbutton" id="Darkforest">Dark Forest</button>
+        </div>
+        <style>
+            .menubutton {
+                height: 50px;
+                width: 125px;
+                margin-inline: 50%;
+                transform: translate(-50%, 0%);
+            }
+            .menutext {
+                text-align: center;
+            }
+            .selecttext {
+                text-align: center;
+            }
+            .selectbutton {
+                height: 50px;
+                width: 125px;
+                margin-inline: 50%;
+                transform: translate(-50%, 0%);
+            }
+        </style>
+        <script>
+            var playbtn = document.getElementById("playbtn")
+            var mainmenu = document.getElementById("mainmenu")
+            var mapselect = document.getElementById("mapselect")
+            
+            playbtn.addEventListener("click", function() {
+                mainmenu.hidden = true
+                mapselect.hidden = false
+            })
+            Darkforest.addEventListener("click", function() {
+                location.relocate("https://generictowerdefensegame.github.io/Dark-Forest")
+            })
+        </script>
+    </body>
+</html>
