@@ -9,7 +9,7 @@
         </div>
         <div hidden id="mapselect">
             <h1 class="selecttext">Map Select</h1>
-            <button class="selectbutton" id="Darkforest">Dark Forest</button>
+            <button class="selectbutton" id="DarkForest">Dark Forest</button>
         </div>
         <style>
             .menubutton {
@@ -35,12 +35,13 @@
             var playbtn = document.getElementById("playbtn")
             var mainmenu = document.getElementById("mainmenu")
             var mapselect = document.getElementById("mapselect")
+            var DarkForest = document.getElementById("DarkForest")
             
             playbtn.addEventListener("click", function() {
                 mainmenu.hidden = true
                 mapselect.hidden = false
             })
-            Darkforest.addEventListener("click", function() {
+            DarkForest.addEventListener("click", function() {
                 location.relocate("https://generictowerdefensegame.github.io/Dark-Forest")
             })
         </script>
